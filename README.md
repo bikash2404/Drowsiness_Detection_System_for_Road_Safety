@@ -19,16 +19,20 @@ This project aims to develop a system using computer vision techniques to detect
 
 ## Installation
 1. Clone the repository:
-
+https://github.com/Shrinivas2001/Drowsiness_Detection_System_for_Road_Safety.git
 
 2. Install required libraries:
-
+pip install scikit-learn
+pip install imutils
+pip install pygame
+pip install dlib
+pip install open_cv
 
 3. Download necessary models or dependencies (if any) as specified in the documentation.
 
 ## Usage
 1. Run the main script:
-
+python drowsiness_detection.py
 
 2. Adjust configuration settings as needed (sensitivity, alerts, etc.) by modifying the corresponding parameters in the script.
 
