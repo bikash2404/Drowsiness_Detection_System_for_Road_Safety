@@ -19,7 +19,7 @@ This project aims to develop a system using computer vision techniques to detect
 
 ## Installation
 1. Clone the repository:
-https://github.com/Shrinivas2001/Drowsiness_Detection_System_for_Road_Safety.git
+https://github.com/bikash2404/Drowsiness_Detection_System_for_Road_Safety.git
 
 2. Install required libraries:
 pip install scikit-learn
@@ -48,9 +48,3 @@ Contributions are welcome! If you want to contribute to this project, please fol
 4. Push to the branch (`git push origin feature/your_feature`).
 5. Create a new Pull Request.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-- This project was inspired by [source/individual/group that inspired you to create this project].
-- Special thanks to [mention anyone you want to acknowledge for their contributions or support].
