@@ -27,7 +27,7 @@ cap=cv2.VideoCapture(0)
 flag=0
 while True:
 	ret, frame=cap.read()
-	frame = imutils.resize(frame, width=450)
+	frame = imutils.resize(frame, width=850)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	subjects = detect(gray, 0)
 	for subject in subjects:
@@ -42,13 +42,14 @@ while True:
 		rightEyeHull = cv2.convexHull(rightEye)
 		cv2.drawContours(frame, [leftEyeHull], -1, (0, 255, 0), 1)
 		cv2.drawContours(frame, [rightEyeHull], -1, (0, 255, 0), 1)
+		
 		if ear < thresh:
 			flag += 1
 			print (flag)
 			if flag >= frame_check:
-				cv2.putText(frame, "****************ALERT!****************", (10, 30),
+				cv2.putText(frame, "****************ALERT!****************", (180, 50),
 					cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-				cv2.putText(frame, "****************ALERT!****************", (10,325),
+				cv2.putText(frame, "****************ALERT!****************", (180,600),
 					cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 				mixer.music.play()
 		else:
